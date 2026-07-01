@@ -40,13 +40,13 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         className="fixed top-0 left-0 right-0 h-16 z-40 flex items-center justify-between px-6 md:px-14 bg-[#0A0F2E]/85 backdrop-blur-[20px] saturate-[180%] border-b border-white/8 shadow-lg"
       >
         {/* Left: Logo */}
-        <div 
+        <div
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center cursor-pointer select-none"
         >
-          <img 
-            src="/logo.svg" 
-            alt="FOODCLOUD Logo" 
+          <img
+            src="/logo.png"
+            alt="FOODCLOUD Logo"
             className="h-8 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
@@ -97,9 +97,8 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
 
       {/* Mobile Menu Drawer Overlay */}
       <div
-        className={`fixed inset-0 z-30 bg-[#0A0F2E]/95 backdrop-blur-lg flex flex-col pt-24 px-6 transition-transform duration-300 md:hidden ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed inset-0 z-30 bg-[#0A0F2E]/95 backdrop-blur-lg flex flex-col pt-24 px-6 transition-transform duration-300 md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex flex-col gap-6">
           {navLinks.map((link) => (
