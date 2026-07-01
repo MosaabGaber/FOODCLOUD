@@ -1,0 +1,6 @@
+{
+  "name": "FoodCloud",
+  "description": "Dubai-based food distribution and GTM advisory firm. Empower brands, Expand horizons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
