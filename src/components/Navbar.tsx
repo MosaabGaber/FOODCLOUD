@@ -47,7 +47,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           <img
             src="/logo.png"
             alt="FOODCLOUD Logo"
-            className="h-8 w-auto object-contain"
+            className="h-10 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
         </div>
