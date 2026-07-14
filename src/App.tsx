@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import GTMAdvisory from './pages/GTMAdvisory';
 import MarketManagement from './pages/MarketManagement';
 import IngredientsAndSolutions from './pages/IngredientsAndSolutions';
+import Company from './pages/Company';
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/gtm-advisory" element={<GTMAdvisory onOpenContact={openContactModal} />} />
           <Route path="/market-management" element={<MarketManagement onOpenContact={openContactModal} />} />
           <Route path="/ingredients-solutions" element={<IngredientsAndSolutions onOpenContact={openContactModal} />} />
+          <Route path="/company" element={<Company onOpenContact={openContactModal} />} />
         </Routes>
       </main>
 

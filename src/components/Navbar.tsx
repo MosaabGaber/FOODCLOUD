@@ -15,7 +15,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     { label: 'Market Management', type: 'route', path: '/market-management' },
     { label: 'Ingredients & Solutions', type: 'route', path: '/ingredients-solutions' },
     { label: 'Our Brands', type: 'scroll', target: 'partner-ticker' },
-    { label: 'Company', type: 'scroll', target: 'why-foodcloud' },
+    { label: 'Company', type: 'route', path: '/company' },
   ];
 
   const handleLinkClick = (link: any) => {
