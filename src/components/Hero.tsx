@@ -8,40 +8,42 @@ export default function Hero({ onOpenContact }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-[calc(100vh-64px)] w-full bg-hero-gradient flex flex-col items-center justify-center text-center px-6 md:px-14 overflow-hidden pt-12 pb-16"
+      className="relative min-h-[calc(100vh-64px)] w-full flex flex-col items-center justify-center text-center px-6 md:px-14 overflow-hidden pt-12 pb-16"
     >
-      {/* Animated Background Orbs */}
-      <div 
-        className="absolute w-[600px] h-[600px] rounded-full bg-white/12 top-[-200px] right-[-100px] pointer-events-none z-0 animate-orb1"
-        style={{ filter: 'blur(80px)' }}
-      />
-      <div 
-        className="absolute w-[400px] h-[400px] rounded-full bg-bright-blue/10 bottom-[-100px] left-[-80px] pointer-events-none z-0 animate-orb2"
-        style={{ filter: 'blur(60px)' }}
-      />
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/hero.webm" type="video/webm" />
+        <source src="/hero.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark overlay so text stays readable */}
+      <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10" />
 
       {/* Hero Content Wrapper */}
-      <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
-        
+      <div className="relative z-20 flex flex-col items-center max-w-4xl mx-auto">
+
         {/* Announcement Banner */}
         <div
           onClick={() => onOpenContact('MENA Market Report')}
           className="group inline-flex items-center gap-3 bg-bright-blue/25 backdrop-blur-md border border-white/30 rounded-full py-2.5 pl-4 pr-5 mb-10 hover:bg-bright-blue/40 transition-all duration-300 cursor-pointer max-w-full select-none animate-[fadeIn_0.5s_ease-out]"
         >
-          {/* Pulsing indicator */}
           <div className="relative w-2.5 h-2.5 flex items-center justify-center">
             <span className="absolute w-2 h-2 rounded-full bg-white animate-pulse-custom" />
           </div>
-          
           <span className="font-display font-medium text-[11px] sm:text-xs text-white tracking-wide text-left line-clamp-1 sm:line-clamp-none">
             Expanding into Saudi Arabia and Egypt — read our MENA market report
           </span>
-          
           <ArrowRight className="w-4 h-4 text-white shrink-0 transition-transform group-hover:translate-x-1" />
         </div>
 
         {/* Headline */}
-        <h1 
+        <h1
           className="font-display font-extrabold text-[40px] sm:text-[52px] md:text-[68px] leading-[1.0] text-white tracking-[-2px] max-w-[800px] animate-[fadeInUp_0.8s_cubic-bezier(0.16,1,0.3,1)_0.1s_both]"
         >
           Empower brands.<br />
@@ -49,7 +51,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         </h1>
 
         {/* Subheadline */}
-        <p 
+        <p
           className="font-sans font-normal text-base sm:text-lg text-white/70 max-w-[540px] leading-[1.65] mt-6 animate-[fadeIn_0.7s_ease-out_0.4s_both]"
         >
           Your dedicated partner for smart market entry into MENA — with limited investment and lower risk.
@@ -81,8 +83,8 @@ export default function Hero({ onOpenContact }: HeroProps) {
 
       </div>
 
-      {/* Thin horizon line at bottom with bouncing dot */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent flex justify-center items-center z-10">
+      {/* Horizon line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent flex justify-center items-center z-20">
         <div className="w-1.5 h-1.5 rounded-full bg-white animate-bounce shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
       </div>
     </section>
