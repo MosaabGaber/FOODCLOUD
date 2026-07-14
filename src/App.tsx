@@ -1,18 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import PartnerTicker from './components/PartnerTicker';
-import ThreePillars from './components/ThreePillars';
-import ProcessSteps from './components/ProcessSteps';
-import DistributionChannels from './components/DistributionChannels';
-import WhyFoodCloud from './components/WhyFoodCloud';
-import CtaBanner from './components/CtaBanner';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
+import Home from './pages/Home';
+import GTMAdvisory from './pages/GTMAdvisory';
+import MarketManagement from './pages/MarketManagement';
+import IngredientsAndSolutions from './pages/IngredientsAndSolutions';
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [contactSource, setContactSource] = useState('General Inquiry');
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const openContactModal = (source: string) => {
     setContactSource(source);
@@ -26,26 +30,12 @@ export default function App() {
 
       {/* Main Sections */}
       <main className="pt-16">
-        {/* Section 1: Hero */}
-        <Hero onOpenContact={openContactModal} />
-
-        {/* Section 2: Partner Brand Ticker */}
-        <PartnerTicker />
-
-        {/* Section 3: Three Service Pillars */}
-        <ThreePillars onOpenContact={openContactModal} />
-
-        {/* Section 4: Four Process Steps */}
-        <ProcessSteps />
-
-        {/* Section 5: Three Distribution Channels */}
-        <DistributionChannels onOpenContact={openContactModal} />
-
-        {/* Section 6: Why FoodCloud (2x2 Grid) */}
-        <WhyFoodCloud />
-
-        {/* Section 7: Final CTA Banner */}
-        <CtaBanner onOpenContact={openContactModal} />
+        <Routes>
+          <Route path="/" element={<Home onOpenContact={openContactModal} />} />
+          <Route path="/gtm-advisory" element={<GTMAdvisory onOpenContact={openContactModal} />} />
+          <Route path="/market-management" element={<MarketManagement onOpenContact={openContactModal} />} />
+          <Route path="/ingredients-solutions" element={<IngredientsAndSolutions onOpenContact={openContactModal} />} />
+        </Routes>
       </main>
 
       {/* Section 8: Five-Column Footer */}

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Map, BarChart2, Package, ArrowRight } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
@@ -6,6 +7,8 @@ interface ThreePillarsProps {
 }
 
 export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
+  const navigate = useNavigate();
+
   const pillars = [
     {
       id: 'gtm-advisory',
@@ -13,6 +16,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
       body: 'We uncover the genuine challenges in your target market and build a smarter path to entry — the right channels, the right partners, the right pricing — with a fraction of the usual risk.',
       buttonText: 'Explore GTM Advisory',
       icon: Map,
+      path: '/gtm-advisory',
       delay: 0,
     },
     {
@@ -21,6 +25,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
       body: "We become your eyes, ears, and hands on the ground — managing distributors, tracking performance, and unlocking your brand's full potential in the MENA market.",
       buttonText: 'Explore Market Management',
       icon: BarChart2,
+      path: '/market-management',
       delay: 150,
     },
     {
@@ -29,6 +34,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
       body: 'Through BLNDZ, we source premium ingredients and develop tailored solutions for bakery, ice cream, and confectionery operators. Milk powder, palm oil, cocoa, yeast.',
       buttonText: 'Explore Ingredients',
       icon: Package,
+      path: '/ingredients-solutions',
       delay: 300,
     },
   ];
@@ -89,7 +95,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
                     {/* CTA Button */}
                     <div>
                       <button
-                        onClick={() => onOpenContact(pillar.title)}
+                        onClick={() => navigate(pillar.path)}
                         className="white-pill-button group cursor-pointer shadow-md shadow-bright-blue/10"
                       >
                         <span>{pillar.buttonText}</span>

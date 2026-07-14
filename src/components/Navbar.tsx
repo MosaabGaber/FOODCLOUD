@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Menu, X, ArrowRight, Mail } from 'lucide-react';
 
 interface NavbarProps {
@@ -7,29 +8,42 @@ interface NavbarProps {
 
 export default function Navbar({ onOpenContact }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navLinks = [
-    { label: 'GTM Advisory', target: 'three-pillars' },
-    { label: 'Market Management', target: 'distribution-channels' },
-    { label: 'Ingredients & Solutions', target: 'ingredients-section' },
-    { label: 'Our Brands', target: 'partner-ticker' },
-    { label: 'Company', target: 'why-foodcloud' },
+    { label: 'GTM Advisory', type: 'route', path: '/gtm-advisory' },
+    { label: 'Market Management', type: 'route', path: '/market-management' },
+    { label: 'Ingredients & Solutions', type: 'route', path: '/ingredients-solutions' },
+    { label: 'Our Brands', type: 'scroll', target: 'partner-ticker' },
+    { label: 'Company', type: 'scroll', target: 'why-foodcloud' },
   ];
 
-  const handleLinkClick = (targetId: string) => {
+  const handleLinkClick = (link: any) => {
     setIsMobileMenuOpen(false);
-    const element = document.getElementById(targetId);
-    if (element) {
-      const offset = 64;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    if (link.type === 'route') {
+      navigate(link.path);
+    } else {
+      // If we are not on the homepage, first navigate to home then scroll (or just go to home if not easy to scroll)
+      // Since they are mostly on home, we can just navigate to home with a hash if needed, but for now let's navigate to /#id
+      // Actually, if we are not on home, document.getElementById might fail.
+      // Let's check if element exists. If not, navigate to / and we could use state or hash to scroll.
+      // A simple solution: navigate to / and let the user scroll, or navigate to /#target.
+      // For now, if element doesn't exist, just navigate to /
+      const element = document.getElementById(link.target);
+      if (element) {
+        const offset = 64;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      } else {
+        navigate('/');
+      }
     }
   };
 
@@ -57,7 +71,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           {navLinks.map((link) => (
             <button
               key={link.label}
-              onClick={() => handleLinkClick(link.target)}
+              onClick={() => handleLinkClick(link)}
               className="font-display font-semibold text-sm text-white/65 hover:text-white transition-colors duration-200 cursor-pointer"
             >
               {link.label}
@@ -104,7 +118,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           {navLinks.map((link) => (
             <button
               key={link.label}
-              onClick={() => handleLinkClick(link.target)}
+              onClick={() => handleLinkClick(link)}
               className="font-display font-semibold text-lg text-white/80 hover:text-white text-left py-2 border-b border-white/5"
             >
               {link.label}
