@@ -13,7 +13,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
     {
       id: 'gtm-advisory',
       title: 'GTM Advisory',
-      body: 'We uncover the genuine challenges in your target market and build a smarter path to entry. the right channels, the right partners, the right pricing — with a fraction of the usual risk.',
+      body: 'We uncover the genuine challenges in your target market and build a smarter path to entry. the right channels, the right partners, the right pricing with a fraction of the usual risk.',
       buttonText: 'Explore GTM Advisory',
       icon: Map,
       path: '/gtm-advisory',

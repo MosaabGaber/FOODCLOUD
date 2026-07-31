@@ -51,7 +51,7 @@ export default function WhyFoodCloud({ }: WhyFoodCloudProps) {
           </ScrollReveal>
           <ScrollReveal direction="up" delay={150}>
             <p className="font-sans font-normal text-sm sm:text-base text-[#64748B] mt-4 leading-relaxed">
-              Most market entries fail not because the product is wrong — but because the execution is. We remove that risk.
+              Most market entries fail not because the product is wrong, but because the execution is. We remove that risk.
             </p>
           </ScrollReveal>
         </div>

@@ -14,12 +14,12 @@ export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
     // Simulate premium PDF compilation and download
     setTimeout(() => {
       setDownloadState('done');
-      
+
       // Auto-reset back to idle after 3 seconds
       setTimeout(() => {
         setDownloadState('idle');
       }, 3000);
-      
+
       // Create a virtual download link
       const text = "FoodCloud Dubai GTM Advisory & Food Distribution Company Profile 2025. Empower brands, Expand horizons.";
       const blob = new Blob([text], { type: "text/plain" });
@@ -40,17 +40,17 @@ export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
       className="relative bg-hero-gradient py-24 px-6 md:px-14 text-center overflow-hidden"
     >
       {/* Background Floating Orbs (smaller scale) */}
-      <div 
+      <div
         className="absolute w-[350px] h-[350px] rounded-full bg-white/12 top-[-100px] right-[-50px] pointer-events-none z-0 animate-orb1"
         style={{ filter: 'blur(60px)' }}
       />
-      <div 
+      <div
         className="absolute w-[220px] h-[220px] rounded-full bg-bright-blue/10 bottom-[-50px] left-[-40px] pointer-events-none z-0 animate-orb2"
         style={{ filter: 'blur(40px)' }}
       />
 
       <div className="max-w-4xl mx-auto relative z-10">
-        
+
         {/* Headline */}
         <ScrollReveal direction="up">
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-[48px] text-white tracking-tight leading-tight max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
         {/* Subhead */}
         <ScrollReveal direction="up" delay={150}>
           <p className="font-sans font-normal text-sm sm:text-lg text-white/70 mt-4 mb-10 max-w-lg mx-auto leading-relaxed">
-            Let's start with a conversation. No pressure, no pitch — just an honest look at your opportunity.
+            Let's start with a conversation. No pressure, no pitch, just an honest look at your opportunity.
           </p>
         </ScrollReveal>
 
