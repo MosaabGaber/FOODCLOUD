@@ -63,6 +63,21 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
         </div>
       </section>
 
+      <section className="w-full bg-white px-6 md:px-[60px] pb-0">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl"
+               style={{ aspectRatio: '16/9' }}>
+            <img
+              src="/person.webp"
+              alt="FoodCloud market management professional reviewing products on the ground in MENA"
+              className="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F2E]/60 via-transparent to-transparent" />
+          </div>
+        </div>
+      </section>
+
       {/* FOUR-STAGE MANAGEMENT CYCLE */}
       <section className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
@@ -71,14 +86,6 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
             backgroundImage: 'radial-gradient(circle, rgba(27, 64, 144, 0.2) 1.5px, transparent 1.5px)',
             backgroundSize: '32px 32px',
           }}
-        />
-        <img
-          src="/person.webp"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover object-right z-0"
-          style={{ opacity: 0.08 }}
         />
         <div className="max-w-7xl mx-auto relative z-14">
           <span className="font-display font-bold text-[10px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
