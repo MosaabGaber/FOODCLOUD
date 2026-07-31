@@ -15,7 +15,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="mb-8 font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center cursor-pointer"
           >
@@ -38,7 +38,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
         <div className="max-w-[800px] mx-auto text-center">
           <ScrollReveal direction="up">
             <p className="font-sans font-normal text-[22px] text-[#1B4090] leading-[1.7] tracking-[-0.2px]">
-              FoodCloud is a Dubai-based food distribution and advisory firm built on one belief — that great brands deserve a smarter, lower-risk path into new markets. We connect international and local food manufacturers with the right partners, channels, and strategies to grow across the Middle East and beyond.
+              FoodCloud is a Dubai-based food distribution and advisory firm built on one belief, that great brands deserve a smarter, lower-risk path into new markets. We connect international and local food manufacturers with the right partners, channels, and strategies to grow across the Middle East and beyond.
             </p>
           </ScrollReveal>
         </div>
@@ -54,7 +54,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
           }}
         />
         <div className="max-w-[900px] mx-auto relative z-10 flex flex-col">
-          
+
           {/* VISION BLOCK */}
           <ScrollReveal direction="up" delay={0} className="w-full">
             <div className="border-t border-white/10 py-[56px] flex flex-col md:flex-row md:items-center gap-10 md:gap-[60px]">
@@ -108,7 +108,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
           <p className="font-sans font-normal text-[16px] text-[#64748B] mb-12">
             Three integrated capabilities that take your brand from market insight to in-market growth.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ perspective: '1200px' }}>
             {[
               {
@@ -221,7 +221,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
               </h2>
             </ScrollReveal>
           </div>
-          
+
           <ScrollReveal direction="up" delay={150}>
             <div className="bg-dark-card-gradient rounded-[20px] p-8 md:p-[48px] shadow-2xl border border-white/5">
               <div className="flex flex-col">
@@ -267,7 +267,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
           <p className="font-sans font-normal text-base text-white/70 leading-relaxed mb-9 max-w-2xl mx-auto">
             Whether you're entering MENA for the first time or looking to scale an existing presence — we'd love to hear from you.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
             <button
               onClick={() => onOpenContact('Company Page CTA')}
