@@ -13,7 +13,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
     {
       id: 'gtm-advisory',
       title: 'GTM Advisory',
-      body: 'We uncover the genuine challenges in your target market and build a smarter path to entry — the right channels, the right partners, the right pricing — with a fraction of the usual risk.',
+      body: 'We uncover the genuine challenges in your target market and build a smarter path to entry. the right channels, the right partners, the right pricing — with a fraction of the usual risk.',
       buttonText: 'Explore GTM Advisory',
       icon: Map,
       path: '/gtm-advisory',
@@ -22,7 +22,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
     {
       id: 'market-management',
       title: 'Market Management',
-      body: "We become your eyes, ears, and hands on the ground — managing distributors, tracking performance, and unlocking your brand's full potential in the MENA market.",
+      body: "We become your eyes, ears, and hands on the ground. managing distributors, tracking performance, and unlocking your brand's full potential in the MENA market.",
       buttonText: 'Explore Market Management',
       icon: BarChart2,
       path: '/market-management',
@@ -53,7 +53,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
         </div>
 
         {/* 3D Perspective Card Grid */}
-        <div 
+        <div
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
           style={{ perspective: '1200px' }}
         >
@@ -107,7 +107,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
           })}
         </div>
       </div>
-      
+
       {/* Anchor targets to match link clicks perfectly */}
       <div id="ingredients-section" className="absolute bottom-0 left-0 h-1 w-1 pointer-events-none opacity-0" />
     </section>

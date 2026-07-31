@@ -15,7 +15,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="mb-8 font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center cursor-pointer"
           >
@@ -45,14 +45,14 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col items-start">
             <ScrollReveal direction="up">
-              <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
+              <span className="font-display font-bold text-[12px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
                 OUR PLATFORM
               </span>
               <h2 className="font-display font-extrabold text-[40px] md:text-[52px] text-[#0A0F2E] tracking-[-1.5px] leading-tight mb-6">
                 Meet BLNDZ.
               </h2>
               <p className="font-sans font-normal text-base text-[#64748B] leading-[1.7] max-w-[480px] mb-10">
-                BLNDZ is FoodCloud's dedicated ingredients and solutions platform. We source and supply premium food ingredients to bakery, ice cream, and confectionery operators across the MENA region — helping them control costs, improve products, and optimise their processes.
+                BLNDZ is FoodCloud's dedicated ingredients and solutions platform. We source and supply premium food ingredients to bakery, ice cream, and confectionery operators across the MENA region, helping them control costs, improve products, and optimise their processes.
               </p>
               <button
                 onClick={() => onOpenContact('BLNDZ Intro')}
@@ -100,7 +100,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
         />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-2xl mx-auto">
-            <span className="font-display font-bold text-[10px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
+            <span className="font-display font-bold text-[12px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
               WHAT WE SOURCE
             </span>
             <h2 className="font-display font-extrabold text-3xl md:text-[44px] text-white tracking-tight mb-4">
@@ -155,28 +155,28 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
       <section className="bg-[#F0F7FF] py-[80px] px-6 md:px-[60px]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center md:text-left mb-12">
-            <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
+            <span className="font-display font-bold text-[14px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
               WHO WE SUPPLY
             </span>
             <h2 className="font-display font-extrabold text-3xl md:text-[44px] text-[#0A0F2E] tracking-tight">
               Built for food operators.
             </h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ perspective: '1200px' }}>
             {[
-              { 
-                title: "Bakery", 
+              {
+                title: "Bakery",
                 body: "Flour, yeast, milk powder and oil solutions for artisan and industrial bakery operators.",
                 icon: Wheat
               },
-              { 
-                title: "Ice Cream", 
+              {
+                title: "Ice Cream",
                 body: "Dairy and oil ingredients optimised for ice cream and frozen dessert production.",
                 icon: IceCream
               },
-              { 
-                title: "Confectionery", 
+              {
+                title: "Confectionery",
                 body: "Cocoa and specialty ingredients for chocolate, candy, and confectionery manufacturers.",
                 icon: Candy
               }
@@ -212,10 +212,10 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
               Clean label ingredients for modern consumers.
             </h2>
           </ScrollReveal>
-          
+
           <div className="flex flex-wrap justify-center gap-3.5">
             {[
-              "Egg Free", "Nut Free", "Lactose Free", 
+              "Egg Free", "Nut Free", "Lactose Free",
               "Gluten Free", "Dairy Free", "Plant Based"
             ].map((badge, idx) => (
               <ScrollReveal key={idx} delay={idx * 50} direction="up">

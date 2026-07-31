@@ -1,8 +1,8 @@
 import ScrollReveal from './ScrollReveal';
 
-interface WhyFoodCloudProps {}
+interface WhyFoodCloudProps { }
 
-export default function WhyFoodCloud({}: WhyFoodCloudProps) {
+export default function WhyFoodCloud({ }: WhyFoodCloudProps) {
   const values = [
     {
       num: '01',
@@ -12,7 +12,7 @@ export default function WhyFoodCloud({}: WhyFoodCloudProps) {
     {
       num: '02',
       title: 'Deep local knowledge',
-      body: "MENA distribution has its own rules — relationships, regulation, channel dynamics. We've lived it.",
+      body: "MENA distribution has its own rules, relationships, regulation, channel dynamics. We've lived it.",
     },
     {
       num: '03',
@@ -32,7 +32,7 @@ export default function WhyFoodCloud({}: WhyFoodCloudProps) {
       className="bg-white py-24 px-6 md:px-14 relative overflow-hidden"
     >
       {/* Dot Grid Overlay */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none z-0"
         style={{
           backgroundImage: 'radial-gradient(circle, rgba(37, 99, 235, 0.1) 1px, transparent 1px)',
@@ -41,7 +41,7 @@ export default function WhyFoodCloud({}: WhyFoodCloudProps) {
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto mb-16">
           <ScrollReveal direction="up">

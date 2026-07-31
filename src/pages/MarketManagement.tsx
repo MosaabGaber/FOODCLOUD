@@ -15,7 +15,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="mb-8 font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center cursor-pointer"
           >
@@ -65,7 +65,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
             backgroundSize: '32px 32px',
           }}
         />
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-14">
           <span className="font-display font-bold text-[10px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
             HOW WE MANAGE
           </span>
@@ -101,13 +101,13 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
       {/* THREE BENEFITS SECTION */}
       <section className="bg-[#F0F7FF] py-[80px] px-6 md:px-[60px]">
         <div className="max-w-7xl mx-auto">
-          <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
+          <span className="font-display font-bold text-[12px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
             WHAT THIS MEANS FOR YOU
           </span>
           <h2 className="font-display font-extrabold text-3xl md:text-[44px] text-[#0A0F2E] tracking-tight mb-12">
             We operate as your MENA team.
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ perspective: '1200px' }}>
             {[
               { title: "Your on-ground team", body: "No need to build a local structure from scratch. We operate as your dedicated MENA arm — present, accountable, and aligned with your goals." },

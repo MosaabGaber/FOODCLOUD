@@ -77,8 +77,8 @@ export default function ProcessSteps() {
           </ScrollReveal>
           <ScrollReveal direction="up" delay={150}>
             <p className="font-sans font-normal text-sm sm:text-base text-white/50 max-w-lg mx-auto mt-4 leading-relaxed">
-              Whether you're entering MENA for the first time or scaling an existing 
-              presence — our structured process removes the guesswork.
+              Whether you're entering MENA for the first time or scaling an existing
+              presence, our structured process removes the guesswork.
             </p>
           </ScrollReveal>
         </div>
@@ -109,19 +109,17 @@ export default function ProcessSteps() {
                 >
                   {/* Step Number Circle */}
                   <div
-                    className={`w-9 h-9 rounded-full flex items-center justify-center mb-7 z-10 transition-all duration-300 ${
-                      isActive
+                    className={`w-9 h-9 rounded-full flex items-center justify-center mb-7 z-10 transition-all duration-300 ${isActive
                         ? 'border-2 border-[#3B82F6] bg-deep-navy shadow-[0_0_12px_rgba(59,130,246,0.5)] scale-100'
                         : 'border border-bright-blue/30 bg-bright-blue/15'
-                    } group-hover:border-[#3B82F6] group-hover:scale-110`}
+                      } group-hover:border-[#3B82F6] group-hover:scale-110`}
                     style={{
                       animation: isActive ? 'pulseOnce 0.4s ease-out' : 'none',
                     }}
                   >
                     <div
-                      className={`w-2.5 h-2.5 rounded-full bg-[#3B82F6] transition-opacity duration-300 ${
-                        isActive ? 'opacity-100' : 'opacity-50'
-                      }`}
+                      className={`w-2.5 h-2.5 rounded-full bg-[#3B82F6] transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-50'
+                        }`}
                     />
                   </div>
 

@@ -67,7 +67,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="mb-8 font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center cursor-pointer"
           >
@@ -80,7 +80,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
             GTM Advisory
           </h1>
           <p className="font-sans font-normal text-lg md:text-[18px] text-white/70 max-w-[560px] leading-[1.65] mb-10">
-            An integrated business model offering a smarter choice for agile business expansion — with limited investments and lower risk.
+            An integrated business model offering a smarter choice for agile business expansion, with limited investments and lower risk.
           </p>
           <button
             onClick={() => onOpenContact('GTM Advisory Hero')}
@@ -157,7 +157,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
             backgroundSize: '28px 28px',
           }}
         />
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-14">
           <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
             STAGE 01
           </span>
@@ -237,19 +237,17 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
                   >
                     {/* Step Number Circle */}
                     <div
-                      className={`w-9 h-9 rounded-full flex items-center justify-center mb-7 z-10 transition-all duration-300 ${
-                        isActive
-                          ? 'border-2 border-[#1B4090] bg-[#0A0F2E] shadow-[0_0_12px_rgba(27,64,144,0.5)] scale-100'
-                          : 'border border-bright-blue/30 bg-bright-blue/15'
-                      } group-hover:border-[#1B4090] group-hover:scale-110`}
+                      className={`w-9 h-9 rounded-full flex items-center justify-center mb-7 z-10 transition-all duration-300 ${isActive
+                        ? 'border-2 border-[#1B4090] bg-[#0A0F2E] shadow-[0_0_12px_rgba(27,64,144,0.5)] scale-100'
+                        : 'border border-bright-blue/30 bg-bright-blue/15'
+                        } group-hover:border-[#1B4090] group-hover:scale-110`}
                       style={{
                         animation: isActive ? 'pulseOnce 0.4s ease-out' : 'none',
                       }}
                     >
                       <div
-                        className={`w-2.5 h-2.5 rounded-full bg-[#1B4090] transition-opacity duration-300 ${
-                          isActive ? 'opacity-100' : 'opacity-50'
-                        }`}
+                        className={`w-2.5 h-2.5 rounded-full bg-[#1B4090] transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-50'
+                          }`}
                       />
                     </div>
 
@@ -288,7 +286,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
           <h2 className="font-display font-bold text-3xl md:text-[38px] text-[#0A0F2E] tracking-tight mb-12">
             From shortlist to launch — we get your brand market-ready.
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{ perspective: '1200px' }}>
             {[
               { title: "Distributor Scoping", body: "Shortlist potential distributors and negotiate commercial terms and collaboration agreements." },

@@ -54,7 +54,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         <p
           className="font-sans font-normal text-base sm:text-lg text-white/70 max-w-[540px] leading-[1.65] mt-6 animate-[fadeIn_0.7s_ease-out_0.4s_both]"
         >
-          Your dedicated partner for smart market entry into MENA — with limited investment and lower risk.
+          Your dedicated partner for smart market entry into MENA, with limited investment and lower risk.
         </p>
 
         {/* CTA Button */}
