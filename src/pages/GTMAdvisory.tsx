@@ -158,7 +158,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
           }}
         />
         <div className="max-w-7xl mx-auto relative z-16">
-          <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
+          <span className="font-display font-bold text-[16px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
             STAGE 01
           </span>
           <h2 className="font-display font-bold text-3xl md:text-[38px] text-[#0A0F2E] max-w-[640px] tracking-[-1px] mb-12">
@@ -206,7 +206,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
           }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
-          <span className="font-display font-bold text-[10px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
+          <span className="font-display font-bold text-[16px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
             STAGE 02
           </span>
           <h2 className="font-display font-bold text-3xl md:text-[38px] text-white max-w-[680px] tracking-tight mb-16">
@@ -280,7 +280,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       {/* MARKET READINESS DEEP DIVE */}
       <section className="bg-[#F0F7FF] py-[80px] px-6 md:px-[60px]">
         <div className="max-w-7xl mx-auto">
-          <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
+          <span className="font-display font-bold text-[16px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
             STAGE 03
           </span>
           <h2 className="font-display font-bold text-3xl md:text-[38px] text-[#0A0F2E] tracking-tight mb-12">
