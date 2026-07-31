@@ -13,6 +13,13 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
     <>
       {/* Hero Section */}
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <img
+          src="/lab.webp"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{ opacity: 0.40 }}
+        />
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
           <button

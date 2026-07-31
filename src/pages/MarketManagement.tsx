@@ -13,6 +13,13 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
     <>
       {/* Hero Section */}
       <section className="relative w-full min-h-[480px] bg-hero-gradient flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <img
+          src="/warehouse.webp"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{ opacity: 0.35 }}
+        />
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
           <button
@@ -64,6 +71,14 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
             backgroundImage: 'radial-gradient(circle, rgba(27, 64, 144, 0.2) 1.5px, transparent 1.5px)',
             backgroundSize: '32px 32px',
           }}
+        />
+        <img
+          src="/person.webp"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover object-right z-0"
+          style={{ opacity: 0.08 }}
         />
         <div className="max-w-7xl mx-auto relative z-14">
           <span className="font-display font-bold text-[10px] text-[#93C5FD] tracking-[3px] uppercase mb-3 block">
