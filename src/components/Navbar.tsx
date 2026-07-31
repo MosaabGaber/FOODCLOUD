@@ -51,7 +51,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     <>
       <nav
         id="navbar"
-        className="fixed top-0 left-0 right-0 h-16 z-40 flex items-center justify-between px-6 md:px-14 bg-[#0A0F2E]/85 backdrop-blur-[20px] saturate-[180%] border-b border-white/8 shadow-lg"
+        className="fixed top-0 left-0 right-0 h-20 z-40 flex items-center justify-between px-6 md:px-14 bg-[#0A0F2E]/85 backdrop-blur-[20px] saturate-[180%] border-b border-white/8 shadow-lg"
       >
         {/* Left: Logo */}
         <div
@@ -61,7 +61,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           <img
             src="/logo.png"
             alt="FOODCLOUD Logo"
-            className="h-14 w-auto object-contain"
+            className="h-16 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
         </div>
