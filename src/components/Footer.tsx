@@ -32,9 +32,9 @@ export default function Footer({ onOpenContact }: FooterProps) {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4 cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img 
-                src="/logo.svg" 
+                src="/footerlogo.png" 
                 alt="FOODCLOUD Logo" 
-                className="h-8 w-auto object-contain"
+                className="h-14 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>

@@ -1,6 +1,10 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { X, Send, CheckCircle2, Building, Mail, Phone, User, MessageSquare } from 'lucide-react';
 
+const OTHER_COUNTRIES = [
+  "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kyrgyzstan", "Laos", "Latvia", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Palau", "Panama", "Papua Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+];
+
 interface ContactModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -13,6 +17,7 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
     email: '',
     phone: '',
     company: '',
+    country: '',
     service: initialSource,
     message: '',
   });
@@ -147,6 +152,35 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                   </div>
                 </div>
 
+                {/* Country Select field */}
+                <div>
+                  <label className="font-display block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                    Country
+                  </label>
+                  <select
+                    value={formData.country}
+                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                    className="w-full text-sm px-4 py-2.5 rounded-xl border border-gray-200 focus:border-bright-blue focus:outline-none focus:ring-1 focus:ring-bright-blue/30 text-deep-navy bg-gray-50/50"
+                  >
+                    <option value="">Select a country...</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option disabled>──────────</option>
+                    {OTHER_COUNTRIES.map((country) => (
+                      <option key={country} value={country}>
+                        {country}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
                 {/* Service Select field */}
                 <div>
                   <label className="font-display block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
@@ -217,6 +251,10 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                 <div className="flex justify-between border-b border-gray-100 pb-2">
                   <span className="text-gray-400">Inquiry Area:</span>
                   <span className="font-semibold">{formData.service}</span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="text-gray-400">Country:</span>
+                  <span className="font-semibold">{formData.country || '-'}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Region Target:</span>

@@ -1,4 +1,4 @@
-import { ShoppingBag, UtensilsCrossed, Boxes, ArrowRight } from 'lucide-react';
+import { ShoppingBag, UtensilsCrossed, Boxes, Globe, ArrowRight } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
 interface DistributionChannelsProps {
@@ -12,6 +12,12 @@ export default function DistributionChannels({ onOpenContact }: DistributionChan
       body: 'Supermarkets, hypermarkets, and specialty food stores. We place your brand where MENA consumers shop most.',
       buttonText: 'Learn about Retail',
       icon: ShoppingBag,
+    },
+    {
+      title: 'E-commerce',
+      body: "Online marketplaces and direct-to-consumer platforms. We connect your brand to MENA's fastest-growing digital shoppers.",
+      buttonText: 'Learn about E-commerce',
+      icon: Globe,
     },
     {
       title: 'HORECA',
@@ -43,13 +49,13 @@ export default function DistributionChannels({ onOpenContact }: DistributionChan
           </ScrollReveal>
           <ScrollReveal direction="up" delay={150}>
             <p className="font-sans font-normal text-sm sm:text-base text-[#64748B] mt-4 leading-relaxed">
-              We operate across three channels in MENA, with deep execution expertise in each.
+              We operate across four channels in MENA, with deep execution expertise in each.
             </p>
           </ScrollReveal>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 max-w-5xl mx-auto gap-6">
           {channels.map((channel, idx) => {
             const IconComponent = channel.icon;
             return (

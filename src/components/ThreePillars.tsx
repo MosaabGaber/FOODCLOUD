@@ -67,18 +67,16 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
                 className="h-full"
               >
                 <div
-                  className="liquid-glass-card liquid-glass-card-hover h-full flex flex-col justify-between"
+                  className="group relative bg-dark-card-gradient rounded-[20px] p-8 md:p-10 text-left overflow-hidden h-full flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-royal-blue/15"
                 >
-                  {/* Glass layers */}
-                  <div className="liquid-glass-card-before" />
-                  <div className="liquid-glass-card-after" />
+                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(147,197,253,0.35)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
 
                   {/* Card Content (z-index 2) */}
                   <div className="relative z-10 flex flex-col h-full justify-between">
                     <div>
                       {/* Icon */}
-                      <div className="mb-6 inline-block text-white/85 p-2 bg-white/5 rounded-2xl border border-white/10 shadow-inner">
-                        <IconComponent className="w-8 h-8" />
+                      <div className="mb-6 inline-block text-white/70 p-1.5 bg-white/5 rounded-xl border border-white/10 shadow-inner">
+                        <IconComponent className="w-7 h-7" />
                       </div>
 
                       {/* Title */}
@@ -87,7 +85,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
                       </h3>
 
                       {/* Body */}
-                      <p className="font-sans font-normal text-sm text-white/75 leading-[1.7] mb-8">
+                      <p className="font-sans font-normal text-sm text-white/60 leading-[1.7] mb-8">
                         {pillar.body}
                       </p>
                     </div>
