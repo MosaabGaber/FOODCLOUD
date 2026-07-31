@@ -73,13 +73,16 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
           style={{ opacity: 0.35 }}
         />
         <div className="absolute inset-0 bg-[#0A0F2E]/55 z-10"></div>
-        <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
+        <div className="absolute top-24 left-6 md:left-14 z-20">
           <button
             onClick={() => navigate('/')}
-            className="mb-8 font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center cursor-pointer"
+            className="font-display font-semibold text-[13px] text-white/60 hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer"
           >
             ← Back to Home
           </button>
+        </div>
+
+        <div className="relative z-20 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
           <span className="font-display font-bold text-[10px] tracking-[3px] text-[#93C5FD] uppercase mb-3 block">
             OUR SERVICES
           </span>
