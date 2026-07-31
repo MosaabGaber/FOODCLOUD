@@ -157,7 +157,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
             backgroundSize: '28px 28px',
           }}
         />
-        <div className="max-w-7xl mx-auto relative z-14">
+        <div className="max-w-7xl mx-auto relative z-16">
           <span className="font-display font-bold text-[10px] text-[#1B4090] tracking-[3px] uppercase mb-3 block">
             STAGE 01
           </span>
