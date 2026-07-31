@@ -24,21 +24,21 @@ export default function Footer({ onOpenContact }: FooterProps) {
   return (
     <footer className="bg-[#060913] text-white pt-16 pb-7 px-6 md:px-14">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 pb-12 border-b border-white/7 mb-6">
-          
+
           {/* Column 1: Brand (Span 2 for 2fr ratio on 5-col grid) */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4 cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <img 
-                src="/footerlogo.png" 
-                alt="FOODCLOUD Logo" 
-                className="h-14 w-auto object-contain"
+              <img
+                src="/footerlogo.png"
+                alt="FOODCLOUD Logo"
+                className="h-18 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>
-            
+
             <p className="font-sans font-normal text-xs sm:text-[13px] text-white/35 max-w-[230px] leading-relaxed mb-6">
               Empowering brands. Expanding horizons. Since 2021.
             </p>
