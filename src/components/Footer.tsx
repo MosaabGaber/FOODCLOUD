@@ -22,7 +22,7 @@ export default function Footer({ onOpenContact }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[#0A0F2E] text-white pt-16 pb-7 px-6 md:px-14">
+    <footer className="bg-[#0A0F2E]/85 backdrop-blur-[20px] saturate-[180%] text-white pt-16 pb-7 px-6 md:px-14">
       <div className="max-w-7xl mx-auto">
 
         {/* Main Grid */}
