@@ -55,11 +55,11 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
       >
         {/* Left: Logo */}
         <div
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => navigate('/')}
           className="flex items-center cursor-pointer select-none"
         >
           <img
-            src="/logo.png"
+            src="/footerlogo.png"
             alt="FOODCLOUD Logo"
             className="h-16 w-auto object-contain"
             referrerPolicy="no-referrer"
