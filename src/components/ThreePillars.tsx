@@ -48,7 +48,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
         {/* Section Headline */}
         <div className="text-center mb-14">
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-[48px] text-deep-navy tracking-tight leading-tight">
-            Do it all with FoodCloud.
+            Do it all with FOODCLOUD.
           </h2>
         </div>
 
