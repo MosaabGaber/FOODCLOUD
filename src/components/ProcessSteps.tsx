@@ -87,7 +87,7 @@ export default function ProcessSteps() {
         <div className="relative mt-12">
 
           {/* Connecting Line — desktop only */}
-          <div className="hidden md:block absolute top-4.5 left-[12.5%] right-[12.5%] h-px bg-bright-blue/25 z-0">
+          <div className="hidden md:block absolute top-4.5 left-[2%] right-[12.5%] h-px bg-bright-blue/25 z-0">
             <div
               className="h-full bg-gradient-to-r from-bright-blue to-[#93C5FD] transition-all ease-out"
               style={{
