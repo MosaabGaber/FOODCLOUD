@@ -28,7 +28,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
             SINCE 2021
           </span>
           <h1 className="font-display font-extrabold text-5xl md:text-[64px] text-white tracking-[-1.5px] leading-tight">
-            About FoodCloud
+            About FOODCLOUD
           </h1>
           <p className="font-sans font-normal text-lg md:text-[20px] text-white/70 max-w-[560px] leading-[1.65] mt-4">
             Empowering brands. Expanding horizons. Since 2021.
@@ -41,7 +41,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
         <div className="max-w-[800px] mx-auto text-center">
           <ScrollReveal direction="up">
             <p className="font-sans font-normal text-[22px] text-[#1B4090] leading-[1.7] tracking-[-0.2px]">
-              FoodCloud is a Dubai-based food distribution and advisory firm built on one belief, that great brands deserve a smarter, lower-risk path into new markets. We connect international and local food manufacturers with the right partners, channels, and strategies to grow across the Middle East and beyond.
+              FOODCLOUD is a Dubai-based food distribution and advisory firm built on one belief, that great brands deserve a smarter, lower-risk path into new markets. We connect international and local food manufacturers with the right partners, channels, and strategies to grow across the Middle East and beyond.
             </p>
           </ScrollReveal>
         </div>
@@ -186,7 +186,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
                 Most brands that fail in MENA don't fail because the product is wrong. They fail because the execution is wrong — the wrong distributor, the wrong pricing, the wrong timing.
               </p>
               <p className="font-sans font-normal text-[16px] text-[#64748B] leading-[1.7]">
-                FoodCloud was founded in 2021 to solve exactly that problem. We built an agile, principal-first model that removes the guesswork, reduces the risk, and puts the right brand in front of the right customer at the right time.
+                FOODCLOUD was founded in 2021 to solve exactly that problem. We built an agile, principal-first model that removes the guesswork, reduces the risk, and puts the right brand in front of the right customer at the right time.
               </p>
             </ScrollReveal>
           </div>

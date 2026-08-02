@@ -62,7 +62,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
                 Meet BLNDZ.
               </h2>
               <p className="font-sans font-normal text-base text-[#64748B] leading-[1.7] max-w-[480px] mb-10">
-                BLNDZ is FoodCloud's dedicated ingredients and solutions platform. We source and supply premium food ingredients to bakery, ice cream, and confectionery operators across the MENA region, helping them control costs, improve products, and optimise their processes.
+                BLNDZ is FOODCLOUD's dedicated ingredients and solutions platform. We source and supply premium food ingredients to bakery, ice cream, and confectionery operators across the MENA region, helping them control costs, improve products, and optimise their processes.
               </p>
               <button
                 onClick={() => onOpenContact('BLNDZ Intro')}
