@@ -46,7 +46,7 @@ export default function WhyFoodCloud({ }: WhyFoodCloudProps) {
         <div className="text-center max-w-xl mx-auto mb-16">
           <ScrollReveal direction="up">
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-[44px] text-deep-navy tracking-tight leading-tight">
-              Why brands choose FoodCloud.
+              Why brands choose FOODCLOUD.
             </h2>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={150}>
