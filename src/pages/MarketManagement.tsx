@@ -60,7 +60,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
           </ScrollReveal>
           <ScrollReveal direction="up" delay={150}>
             <p className="font-sans font-normal text-base text-[#64748B] mt-8 max-w-[680px] mx-auto text-left pl-6 md:pl-8">
-              From the moment your brand goes live in the MENA market, FoodCloud manages every operational touchpoint — so you can focus on growing the brand, not managing the logistics.
+              From the moment your brand goes live in the MENA market, FOODCLOUD manages every operational touchpoint — so you can focus on growing the brand, not managing the logistics.
             </p>
           </ScrollReveal>
         </div>
@@ -69,7 +69,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
       <section className="w-full bg-white px-6 md:px-[60px] pb-0">
         <div className="max-w-7xl mx-auto">
           <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl"
-               style={{ aspectRatio: '16/9' }}>
+            style={{ aspectRatio: '16/9' }}>
             <img
               src="/person.webp"
               alt="FoodCloud market management professional reviewing products on the ground in MENA"
