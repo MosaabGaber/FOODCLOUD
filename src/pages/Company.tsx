@@ -48,7 +48,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
       </section>
 
       {/* SECTION 2 — VISION & MISSION */}
-      <section className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
+      <section className="bg-[#0B1120] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none z-0"
           style={{

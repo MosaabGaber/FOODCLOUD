@@ -207,7 +207,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       </section>
 
       {/* GTM STRATEGY DEEP DIVE */}
-      <section ref={sectionRef} className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
+      <section ref={sectionRef} className="bg-[#0B1120] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none z-0 opacity-50"
           style={{
