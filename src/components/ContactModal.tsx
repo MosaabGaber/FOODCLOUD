@@ -191,11 +191,13 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full text-sm px-4 py-2.5 rounded-xl border border-gray-200 focus:border-bright-blue focus:outline-none focus:ring-1 focus:ring-bright-blue/30 text-deep-navy bg-gray-50/50"
                   >
+                    <option value="" disabled>Select a service</option>
                     <option value="GTM Advisory">GTM Advisory Consultation</option>
                     <option value="Market Management">Market Management & Distribution</option>
                     <option value="Ingredients & Solutions">Ingredients & Solutions (BLNDZ)</option>
                     <option value="MENA Market Report">MENA Market Report Inquiry</option>
                     <option value="General Inquiry">General B2B Inquiry</option>
+                    <option value="General Enquiry">General Enquiry</option>
                   </select>
                 </div>
 
