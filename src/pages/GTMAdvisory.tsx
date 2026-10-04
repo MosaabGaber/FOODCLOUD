@@ -207,7 +207,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       </section>
 
       {/* GTM STRATEGY DEEP DIVE */}
-      <section ref={sectionRef} className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
+      <section ref={sectionRef} className="bg-[#0A0F2E] saturate-[180%] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none z-0 opacity-50"
           style={{
@@ -324,10 +324,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       {/* CTA BANNER (Custom text but same style) */}
       <section className="bg-white py-16 px-6 md:px-14">
         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden relative shadow-2xl">
-          <div className="absolute inset-0 bg-[#F4715B] z-0" />
-          <div className="absolute inset-0 z-0 bg-[linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%,transparent_75%,rgba(0,0,0,0.05)_75%,rgba(0,0,0,0.05)),linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%,transparent_75%,rgba(0,0,0,0.05)_75%,rgba(0,0,0,0.05))] bg-[length:24px_24px] bg-[position:0_0,12px_12px]" />
-          <div className="absolute -left-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl z-0" />
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-white/20 rounded-full blur-3xl z-0" />
+          <div className="absolute inset-0 bg-[#0A0F2E] z-0" />
 
           <div className="relative z-10 py-16 px-8 md:px-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
             <div className="max-w-xl mb-10 md:mb-0">
@@ -344,12 +341,6 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
                 className="bg-deep-navy hover:bg-[#111A42] text-white px-8 py-3.5 rounded-xl font-display font-bold text-sm transition-transform hover:-translate-y-1 shadow-lg cursor-pointer flex-1 md:flex-none text-center"
               >
                 Book a Discovery Call
-              </button>
-              <button
-                onClick={() => navigate('/')}
-                className="bg-white/20 hover:bg-white/30 text-white border border-white/40 px-8 py-3.5 rounded-xl font-display font-bold text-sm transition-all shadow-md backdrop-blur-sm cursor-pointer flex-1 md:flex-none text-center"
-              >
-                Back to Services
               </button>
             </div>
           </div>
