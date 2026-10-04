@@ -66,18 +66,15 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
         </div>
       </section>
 
-      <section className="w-full bg-white px-6 md:px-[60px] pb-0">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl"
-            style={{ aspectRatio: '16/9' }}>
-            <img
-              src="/person.webp"
-              alt="FoodCloud market management professional reviewing products on the ground in MENA"
-              className="w-full h-full object-cover object-center"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F2E]/60 via-transparent to-transparent" />
-          </div>
+      <section className="w-full overflow-hidden">
+        <div className="relative w-full">
+          <img
+            src="/person.webp"
+            alt="FoodCloud market management professional reviewing products on the ground in MENA"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F2E]/60 via-transparent to-transparent" />
         </div>
       </section>
 
