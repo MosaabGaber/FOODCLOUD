@@ -3,12 +3,10 @@ interface PartnerTickerProps {}
 export default function PartnerTicker({}: PartnerTickerProps) {
   const brands = [
     "Birds Eye",
-    "Boost Protein",
     "Aunt Bessie's",
     "Goodfella's",
     "Captain Birds Eye",
     "Crumbz Pretzels",
-    "posty water pods",
     "Thai Union",
     "Meadow Vale",
     "Milky Royal",

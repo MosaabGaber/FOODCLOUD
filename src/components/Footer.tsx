@@ -110,7 +110,7 @@ export default function Footer({ onOpenContact }: FooterProps) {
               {[
                 { label: 'Retail', target: 'distribution-channels' },
                 { label: 'HORECA', target: 'distribution-channels' },
-                { label: 'B2B Sourcing', target: 'distribution-channels' },
+                { label: 'B2B', target: 'distribution-channels' },
               ].map((item) => (
                 <button
                   key={item.label}

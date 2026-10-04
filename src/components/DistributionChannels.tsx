@@ -26,7 +26,7 @@ export default function DistributionChannels({ onOpenContact }: DistributionChan
       icon: UtensilsCrossed,
     },
     {
-      title: 'B2B Sourcing',
+      title: 'B2B',
       body: 'Ingredients and solutions supplied directly to food manufacturers, processors, and bakeries.',
       buttonText: 'Learn about B2B',
       icon: Boxes,

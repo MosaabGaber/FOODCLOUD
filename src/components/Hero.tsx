@@ -28,20 +28,6 @@ export default function Hero({ onOpenContact }: HeroProps) {
       {/* Hero Content Wrapper */}
       <div className="relative z-20 flex flex-col items-center max-w-4xl mx-auto">
 
-        {/* Announcement Banner */}
-        <div
-          onClick={() => onOpenContact('MENA Market Report')}
-          className="group inline-flex items-center gap-3 bg-bright-blue/25 backdrop-blur-md border border-white/30 rounded-full py-2.5 pl-4 pr-5 mb-10 hover:bg-bright-blue/40 transition-all duration-300 cursor-pointer max-w-full select-none animate-[fadeIn_0.5s_ease-out]"
-        >
-          <div className="relative w-2.5 h-2.5 flex items-center justify-center">
-            <span className="absolute w-2 h-2 rounded-full bg-white animate-pulse-custom" />
-          </div>
-          <span className="font-display font-medium text-[11px] sm:text-xs text-white tracking-wide text-left line-clamp-1 sm:line-clamp-none">
-            Expanding into Saudi Arabia and Egypt — read our MENA market report
-          </span>
-          <ArrowRight className="w-4 h-4 text-white shrink-0 transition-transform group-hover:translate-x-1" />
-        </div>
-
         {/* Headline */}
         <h1
           className="font-display font-extrabold text-[40px] sm:text-[52px] md:text-[68px] leading-[1.0] text-white tracking-[-2px] max-w-[800px] animate-[fadeInUp_0.8s_cubic-bezier(0.16,1,0.3,1)_0.1s_both]"
@@ -54,19 +40,8 @@ export default function Hero({ onOpenContact }: HeroProps) {
         <p
           className="font-sans font-normal text-base sm:text-lg text-white/70 max-w-[540px] leading-[1.65] mt-6 animate-[fadeIn_0.7s_ease-out_0.4s_both]"
         >
-          Your dedicated partner for smart market entry into MENA, with limited investment and lower risk.
+          Your strategic partner for smart market entry into MENA, with limited investment and lower risk.
         </p>
-
-        {/* CTA Button */}
-        <div className="mt-10 animate-[fadeInUp_0.6s_ease-out_0.65s_both]">
-          <button
-            onClick={() => onOpenContact('Strategy Call')}
-            className="group flex items-center gap-2.5 bg-white text-deep-navy font-display font-bold text-base px-8 py-4 rounded-full transition-all duration-300 hover:bg-soft-white hover:-translate-y-0.5 hover:shadow-xl cursor-pointer"
-          >
-            <span>Book a Strategy Call</span>
-            <ArrowRight className="w-5 h-5 text-deep-navy transition-transform group-hover:translate-x-1" />
-          </button>
-        </div>
 
         {/* Stat Chips */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-12 animate-[fadeIn_0.6s_ease-out_1s_both]">
@@ -79,6 +54,17 @@ export default function Hero({ onOpenContact }: HeroProps) {
           <div className="glass-style text-white font-display font-semibold text-xs sm:text-[13px] py-2.5 px-5 rounded-full select-none shadow-sm shadow-black/5 hover:bg-white/12 transition-colors">
             MENA Region
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-10 animate-[fadeInUp_0.6s_ease-out_0.65s_both]">
+          <button
+            onClick={() => onOpenContact('Strategy Call')}
+            className="group flex items-center gap-2.5 bg-white text-deep-navy font-display font-bold text-base px-8 py-4 rounded-full transition-all duration-300 hover:bg-soft-white hover:-translate-y-0.5 hover:shadow-xl cursor-pointer"
+          >
+            <span>Book a Strategy Call</span>
+            <ArrowRight className="w-5 h-5 text-deep-navy transition-transform group-hover:translate-x-1" />
+          </button>
         </div>
 
       </div>

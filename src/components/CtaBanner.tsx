@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { ArrowRight, FileText, Check } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
 interface CtaBannerProps {
@@ -7,33 +6,6 @@ interface CtaBannerProps {
 }
 
 export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
-  const [downloadState, setDownloadState] = useState<'idle' | 'preparing' | 'done'>('idle');
-
-  const handleDownload = () => {
-    setDownloadState('preparing');
-    // Simulate premium PDF compilation and download
-    setTimeout(() => {
-      setDownloadState('done');
-
-      // Auto-reset back to idle after 3 seconds
-      setTimeout(() => {
-        setDownloadState('idle');
-      }, 3000);
-
-      // Create a virtual download link
-      const text = "FoodCloud Dubai GTM Advisory & Food Distribution Company Profile 2025. Empower brands, Expand horizons.";
-      const blob = new Blob([text], { type: "text/plain" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "FoodCloud_Company_Profile.txt";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }, 1200);
-  };
-
   return (
     <section
       id="cta-banner"
@@ -75,32 +47,6 @@ export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
             >
               <span>Book a Discovery Call</span>
               <ArrowRight className="w-4 h-4 text-deep-navy transition-transform group-hover:translate-x-1" />
-            </button>
-
-            {/* Profile Download Button */}
-            <button
-              onClick={handleDownload}
-              disabled={downloadState === 'preparing'}
-              className="group w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border-1.5 border-white text-white font-display font-semibold text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 cursor-pointer disabled:opacity-80"
-            >
-              {downloadState === 'idle' && (
-                <>
-                  <span>Download Company Profile</span>
-                  <FileText className="w-4 h-4 text-white group-hover:scale-105 transition-transform" />
-                </>
-              )}
-              {downloadState === 'preparing' && (
-                <>
-                  <span>Preparing Profile PDF...</span>
-                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                </>
-              )}
-              {downloadState === 'done' && (
-                <>
-                  <span>Profile Downloaded</span>
-                  <Check className="w-4 h-4 text-emerald-300" />
-                </>
-              )}
             </button>
           </div>
         </ScrollReveal>

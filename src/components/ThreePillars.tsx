@@ -22,7 +22,7 @@ export default function ThreePillars({ onOpenContact }: ThreePillarsProps) {
     {
       id: 'market-management',
       title: 'Market Management',
-      body: "We become your eyes, ears, and hands on the ground. managing distributors, tracking performance, and unlocking your brand's full potential in the MENA market.",
+      body: "We become your extended arm with real boots on the ground. managing distributors, tracking performance, and unlocking your brand's full potential in the MENA market.",
       buttonText: 'Explore Market Management',
       icon: BarChart2,
       path: '/market-management',
