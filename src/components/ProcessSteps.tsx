@@ -55,7 +55,7 @@ export default function ProcessSteps() {
     <section
       ref={sectionRef}
       id="process-steps"
-      className="bg-hero-gradient py-24 px-6 md:px-14 relative overflow-hidden"
+      className="bg-[#0A0F2E] py-24 px-6 md:px-14 relative overflow-hidden"
     >
       {/* Decorative Dot Grid */}
       <div
