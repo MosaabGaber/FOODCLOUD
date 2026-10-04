@@ -324,7 +324,7 @@ export default function GTMAdvisory({ onOpenContact }: GTMAdvisoryProps) {
       {/* CTA BANNER (Custom text but same style) */}
       <section className="bg-white py-16 px-6 md:px-14">
         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden relative shadow-2xl">
-          <div className="absolute inset-0 bg-[#0A0F2E] z-0" />
+          <div className="absolute inset-0 bg-[#1B4090] z-0" />
 
           <div className="relative z-10 py-16 px-8 md:px-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
             <div className="max-w-xl mb-10 md:mb-0">
