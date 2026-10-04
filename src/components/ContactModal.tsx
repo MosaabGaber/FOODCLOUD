@@ -196,7 +196,7 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                     <option value="Market Management">Market Management & Distribution</option>
                     <option value="Ingredients & Solutions">Ingredients & Solutions (BLNDZ)</option>
                     <option value="MENA Market Report">MENA Market Report Inquiry</option>
-                    <option value="General Inquiry">General B2B Inquiry</option>
+                    <option value="General Inquiry">General Inquiry</option>
                     <option value="General Enquiry">General Enquiry</option>
                   </select>
                 </div>
