@@ -14,7 +14,6 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     { label: 'GTM Advisory', type: 'route', path: '/gtm-advisory' },
     { label: 'Market Management', type: 'route', path: '/market-management' },
     { label: 'Ingredients & Solutions', type: 'route', path: '/ingredients-solutions' },
-    { label: 'Our Brands', type: 'scroll', target: 'partner-ticker' },
     { label: 'Company', type: 'route', path: '/company' },
   ];
 

@@ -136,18 +136,6 @@ export default function Footer({ onOpenContact }: FooterProps) {
                 About FoodCloud
               </button>
               <button
-                onClick={() => scrollToId('partner-ticker')}
-                className="text-left font-sans text-[13px] text-white/35 hover:text-[#93C5FD] transition-all hover:translate-x-0.5 cursor-pointer"
-              >
-                Our Brands
-              </button>
-              <button
-                onClick={() => scrollToId('partner-ticker')}
-                className="text-left font-sans text-[13px] text-white/35 hover:text-[#93C5FD] transition-all hover:translate-x-0.5 cursor-pointer"
-              >
-                Partners
-              </button>
-              <button
                 onClick={() => onOpenContact('Footer Contact Link')}
                 className="text-left font-sans text-[13px] text-white/35 hover:text-[#93C5FD] transition-all hover:translate-x-0.5 cursor-pointer"
               >

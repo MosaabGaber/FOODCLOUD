@@ -48,7 +48,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
       </section>
 
       {/* SECTION 2 — VISION & MISSION */}
-      <section className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
+      <section className="bg-[#0A0F2E] saturate-[180%] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none z-0"
           style={{
@@ -277,12 +277,6 @@ export default function Company({ onOpenContact }: CompanyProps) {
               className="white-pill-button cursor-pointer shadow-lg flex-1 sm:flex-none justify-center"
             >
               <span>Get in Touch</span>
-            </button>
-            <button
-              onClick={() => navigate('/gtm-advisory')}
-              className="bg-transparent hover:bg-white/10 text-white border border-white/40 px-6 py-3 rounded-full font-display font-bold text-sm transition-all cursor-pointer flex-1 sm:flex-none text-center"
-            >
-              Explore Our Services
             </button>
           </div>
         </div>
