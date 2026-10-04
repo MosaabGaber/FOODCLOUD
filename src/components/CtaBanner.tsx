@@ -43,10 +43,10 @@ export default function CtaBanner({ onOpenContact }: CtaBannerProps) {
             {/* Discovery Call Button */}
             <button
               onClick={() => onOpenContact('Discovery Call')}
-              className="group w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-deep-navy font-display font-bold text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 hover:bg-soft-white hover:-translate-y-0.5 cursor-pointer shadow-lg shadow-black/5"
+              className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
             >
               <span>Book a Discovery Call</span>
-              <ArrowRight className="w-4 h-4 text-deep-navy transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
             </button>
           </div>
         </ScrollReveal>

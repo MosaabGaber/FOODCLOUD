@@ -157,7 +157,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
                       <div>
                         <button
                           onClick={() => navigate(card.path)}
-                          className="white-pill-button group cursor-pointer shadow-md shadow-bright-blue/10"
+                          className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
                         >
                           <span>{card.button}</span>
                         </button>
@@ -274,7 +274,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
             <button
               onClick={() => onOpenContact('Company Page CTA')}
-              className="white-pill-button cursor-pointer shadow-lg flex-1 sm:flex-none justify-center"
+              className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
             >
               <span>Get in Touch</span>
             </button>

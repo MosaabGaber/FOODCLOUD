@@ -42,10 +42,10 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
           </p>
           <button
             onClick={() => onOpenContact('Ingredients Hero')}
-            className="white-pill-button group cursor-pointer shadow-lg shadow-bright-blue/20"
+            className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
           >
             <span>Request Sourcing Info</span>
-            <ArrowRight className="w-4 h-4 text-[#0D1F5C] transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
           </button>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
               </p>
               <button
                 onClick={() => onOpenContact('BLNDZ Intro')}
-                className="white-pill-button !bg-[#1B4090] !text-white group cursor-pointer shadow-lg"
+                className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
               >
                 <span>Request Sourcing Info</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
@@ -225,7 +225,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
               <button
                 onClick={() => onOpenContact('Ingredients CTA')}
-                className="bg-deep-navy hover:bg-[#111A42] text-white px-8 py-3.5 rounded-xl font-display font-bold text-sm transition-transform hover:-translate-y-1 shadow-lg cursor-pointer flex-1 md:flex-none text-center"
+                className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
               >
                 Request Sourcing Info
               </button>

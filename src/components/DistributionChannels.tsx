@@ -93,10 +93,10 @@ export default function DistributionChannels({ onOpenContact }: DistributionChan
                     <div>
                       <button
                         onClick={() => onOpenContact(`${channel.title} Channel`)}
-                        className="white-pill-button cursor-pointer w-full sm:w-auto justify-center"
+                        className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
                       >
                         <span>{channel.buttonText}</span>
-                        <ArrowRight className="w-4 h-4 text-[#0D1F5C] transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
                       </button>
                     </div>
                   </div>

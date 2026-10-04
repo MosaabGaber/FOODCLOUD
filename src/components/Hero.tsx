@@ -60,10 +60,10 @@ export default function Hero({ onOpenContact }: HeroProps) {
         <div className="mt-10 animate-[fadeInUp_0.6s_ease-out_0.65s_both]">
           <button
             onClick={() => onOpenContact('Strategy Call')}
-            className="group flex items-center gap-2.5 bg-white text-deep-navy font-display font-bold text-base px-8 py-4 rounded-full transition-all duration-300 hover:bg-soft-white hover:-translate-y-0.5 hover:shadow-xl cursor-pointer"
+            className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
           >
             <span>Book a Strategy Call</span>
-            <ArrowRight className="w-5 h-5 text-deep-navy transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-5 h-5 text-white transition-transform group-hover:translate-x-1" />
           </button>
         </div>
 
