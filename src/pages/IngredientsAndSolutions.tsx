@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Check, Droplets, Leaf, Coffee, FlaskConical, Wheat, IceCream, Candy, CheckCircle } from 'lucide-react';
+import { ArrowRight, Check, Droplets, Leaf, Coffee, Settings, Wheat, IceCream, Candy } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 
 interface IngredientsAndSolutionsProps {
@@ -100,7 +100,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
       </section>
 
       {/* INGREDIENTS WE SOURCE */}
-      <section className="bg-[#0A0F2E] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
+      <section className="bg-[#0A0F2E] saturate-[180%] relative py-[80px] px-6 md:px-[60px] overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none z-0 opacity-50"
           style={{
@@ -129,8 +129,8 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
                 icon: Droplets
               },
               {
-                title: "Palm Oil",
-                body: "Sustainably sourced palm oil for frying, baking, and food manufacturing across the region.",
+                title: "Oils",
+                body: "Sustainably sourced oils for food manufacturing across the region.",
                 icon: Leaf
               },
               {
@@ -139,9 +139,9 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
                 icon: Coffee
               },
               {
-                title: "Yeast",
-                body: "Bakers yeast in varied formats to support consistent, high-quality bread and bakery production.",
-                icon: FlaskConical
+                title: "Solutions",
+                body: "Smart systems to improve quality, efficiency, and cost.",
+                icon: Settings
               }
             ].map((card, idx) => {
               const Icon = card.icon;
@@ -177,17 +177,14 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
             {[
               {
                 title: "Bakery",
-                body: "Flour, yeast, milk powder and oil solutions for artisan and industrial bakery operators.",
                 icon: Wheat
               },
               {
                 title: "Ice Cream",
-                body: "Dairy and oil ingredients optimised for ice cream and frozen dessert production.",
                 icon: IceCream
               },
               {
                 title: "Confectionery",
-                body: "Cocoa and specialty ingredients for chocolate, candy, and confectionery manufacturers.",
                 icon: Candy
               }
             ].map((card, idx) => {
@@ -201,10 +198,7 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
                       <div className="mb-6 inline-block text-white/85 p-2 bg-white/5 rounded-2xl border border-white/10 shadow-inner">
                         <Icon className="w-[28px] h-[28px]" />
                       </div>
-                      <h3 className="font-display font-bold text-xl text-white mb-3">{card.title}</h3>
-                      <p className="font-sans font-normal text-[14px] text-white/75 leading-[1.65]">
-                        {card.body}
-                      </p>
+                      <h3 className="font-display font-bold text-xl text-white">{card.title}</h3>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -214,40 +208,10 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
         </div>
       </section>
 
-      {/* DIETARY BADGES */}
-      <section className="bg-white py-[60px] px-6 md:px-[60px] text-center">
-        <div className="max-w-4xl mx-auto">
-          <ScrollReveal direction="up">
-            <h2 className="font-display font-bold text-2xl md:text-[36px] text-[#0A0F2E] mb-10">
-              Clean label ingredients for modern consumers.
-            </h2>
-          </ScrollReveal>
-
-          <div className="flex flex-wrap justify-center gap-3.5">
-            {[
-              "Egg Free", "Nut Free", "Lactose Free",
-              "Gluten Free", "Dairy Free", "Plant Based"
-            ].map((badge, idx) => (
-              <ScrollReveal key={idx} delay={idx * 50} direction="up">
-                <div className="flex items-center gap-2 bg-[#1B4090]/5 hover:bg-[#1B4090]/10 border-[1.5px] border-[#1B4090]/20 hover:border-[#1B4090]/40 rounded-full py-2.5 px-5 transition-all duration-200 cursor-default">
-                  <CheckCircle className="w-3.5 h-3.5 text-[#1B4090]" />
-                  <span className="font-display font-semibold text-[13px] text-[#1B4090] tracking-[0.5px]">
-                    {badge}
-                  </span>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA BANNER */}
       <section className="bg-white py-16 px-6 md:px-14">
         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden relative shadow-2xl">
-          <div className="absolute inset-0 bg-[#F4715B] z-0" />
-          <div className="absolute inset-0 z-0 bg-[linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%,transparent_75%,rgba(0,0,0,0.05)_75%,rgba(0,0,0,0.05)),linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%,transparent_75%,rgba(0,0,0,0.05)_75%,rgba(0,0,0,0.05))] bg-[length:24px_24px] bg-[position:0_0,12px_12px]" />
-          <div className="absolute -left-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl z-0" />
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-white/20 rounded-full blur-3xl z-0" />
+          <div className="absolute inset-0 bg-[#1B4090] z-0" />
 
           <div className="relative z-10 py-16 px-8 md:px-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
             <div className="max-w-xl mb-10 md:mb-0">
@@ -264,12 +228,6 @@ export default function IngredientsAndSolutions({ onOpenContact }: IngredientsAn
                 className="bg-deep-navy hover:bg-[#111A42] text-white px-8 py-3.5 rounded-xl font-display font-bold text-sm transition-transform hover:-translate-y-1 shadow-lg cursor-pointer flex-1 md:flex-none text-center"
               >
                 Request Sourcing Info
-              </button>
-              <button
-                onClick={() => navigate('/')}
-                className="bg-white/20 hover:bg-white/30 text-white border border-white/40 px-8 py-3.5 rounded-xl font-display font-bold text-sm transition-all shadow-md backdrop-blur-sm cursor-pointer flex-1 md:flex-none text-center"
-              >
-                Back to Services
               </button>
             </div>
           </div>
