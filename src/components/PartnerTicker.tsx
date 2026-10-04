@@ -6,7 +6,7 @@ export default function PartnerTicker({}: PartnerTickerProps) {
     "Aunt Bessie's",
     "Goodfella's",
     "Captain Birds Eye",
-    "Crumbz Pretzels",
+    "PNCH Nutrition",
     "Thai Union",
     "Meadow Vale",
     "Milky Royal",
