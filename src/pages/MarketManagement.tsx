@@ -42,7 +42,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
           </p>
           <button
             onClick={() => onOpenContact('Market Management Hero')}
-            className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
+            className="bg-bright-blue hover:bg-royal-blue saturate-[180%] text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer group"
           >
             <span>Talk to Our Team</span>
             <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
@@ -170,7 +170,7 @@ export default function MarketManagement({ onOpenContact }: MarketManagementProp
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
               <button
                 onClick={() => onOpenContact('Market Management CTA')}
-                className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
+                className="bg-bright-blue hover:bg-royal-blue saturate-[180%] text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
               >
                 Get in Touch
               </button>

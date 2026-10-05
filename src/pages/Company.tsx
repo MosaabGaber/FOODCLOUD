@@ -274,7 +274,7 @@ export default function Company({ onOpenContact }: CompanyProps) {
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
             <button
               onClick={() => onOpenContact('Company Page CTA')}
-              className="bg-bright-blue hover:bg-royal-blue text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
+              className="bg-bright-blue hover:bg-royal-blue saturate-[180%] text-white font-display font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer"
             >
               <span>Get in Touch</span>
             </button>
