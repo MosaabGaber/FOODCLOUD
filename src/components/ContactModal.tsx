@@ -121,7 +121,7 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Jane Doe"
+                      placeholder="Amina Gaber"
                       className="w-full text-sm px-4 py-2.5 rounded-xl border border-gray-200 focus:border-bright-blue focus:outline-none focus:ring-1 focus:ring-bright-blue/30 text-deep-navy bg-gray-50/50"
                     />
                   </div>
@@ -216,7 +216,6 @@ export default function ContactModal({ isOpen, onClose, initialSource = 'General
                     <option value="GTM Advisory">GTM Advisory Consultation</option>
                     <option value="Market Management">Market Management & Distribution</option>
                     <option value="Ingredients & Solutions">Ingredients & Solutions (BLNDZ)</option>
-                    <option value="MENA Market Report">MENA Market Report Inquiry</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>
                 </div>
